@@ -7,3 +7,10 @@ To quickly build package for target platform:
 * In SDK root directory make a directory for package inside `package` (e.g. `package/libevent21`).
 * Checkout `Makefile` to package directory
 * Run `make package/libevent21/install V=s` from SDK root
+* When built succesfully packages are placed in `bin/${PLATFORM}/packages` directory:
+  - bin/ar71xx/packages/base/libevent2-pthreads_2.1.5-1_ar71xx.ipk
+  - bin/ar71xx/packages/base/libevent2-openssl_2.1.5-1_ar71xx.ipk
+  - bin/ar71xx/packages/base/libevent2-core_2.1.5-1_ar71xx.ipk
+  - bin/ar71xx/packages/base/libevent2-extra_2.1.5-1_ar71xx.ipk
+  - bin/ar71xx/packages/base/libevent2_2.1.5-1_ar71xx.ipk
+* `opkg` feeds need to be [confgiured](http://wiki.openwrt.org/doc/techref/opkg#configuration) either to use local http server or install packages from filesystem (via `file:///` url schema)
