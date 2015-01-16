@@ -14,6 +14,6 @@ To quickly build package for target platform:
   - bin/ar71xx/packages/base/libevent2-extra_2.1.5-1_ar71xx.ipk
   - bin/ar71xx/packages/base/libevent2_2.1.5-1_ar71xx.ipk
 * Generate package index:
-  - `staging_dir/host/bin/ipkg-make-index bin/ar71xx/packages/base > bin/ar71xx/packages/Packages`
-  - `gzip -c bin/ar71xx/packages/Packages > bin/ar71xx/packages/Packages.gz`
+  - `staging_dir/host/bin/ipkg-make-index bin/ar71xx/packages/base > bin/ar71xx/packages/base/Packages`
+  - `gzip -c bin/ar71xx/packages/base/Packages > bin/ar71xx/packages/base/Packages.gz`
 * `opkg` feeds need to be [confgiured](http://wiki.openwrt.org/doc/techref/opkg#configuration) either to use local http server or install packages from filesystem (via `file:///` url schema)
