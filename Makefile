@@ -14,7 +14,7 @@ PKG_SFX:=beta
 
 PKG_BUILD_DIR:=$(BUILD_DIR)/libevent-release-$(PKG_VERSION)-$(PKG_SFX)
 PKG_SOURCE:=release-$(PKG_VERSION)-$(PKG_SFX).tar.gz
-PKG_SOURCE_URL:=https://github.com/libevent/libevent/archive
+PKG_SOURCE_URL:=https://github.com/frymode/libevent/archive
 PKG_MD5SUM:=7b264c9794a4a4cf79b8c6a5b1f72658
 PKG_MAINTAINER:=Jo-Philipp Wich <jow@openwrt.org>
 PKG_LICENSE:=BSD-3-Clause
@@ -58,7 +58,7 @@ endef
 
 define Package/libevent2-core
   $(call Package/libevent2/Default)
-  TITLE+= core library (version 2.0)
+  TITLE+= core library (version 2.1)
 endef
 
 define Package/libevent2-core/description
